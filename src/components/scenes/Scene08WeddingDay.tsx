@@ -167,44 +167,6 @@ export const Scene08WeddingDay: React.FC<Scene08WeddingDayProps> = ({ lang }) =>
           ))}
         </div>
 
-        {/* Dress code */}
-        <div
-          ref={attireRef}
-          className="mt-10 glass-card rounded-3xl p-6 border-2 border-[#DCE8C8] flex flex-col sm:flex-row items-center justify-between gap-5 shadow-lg"
-          style={{
-            opacity: attireVisible ? 1 : 0,
-            animation: attireVisible ? 'fadeUp 0.7s 0.1s ease-out forwards' : 'none',
-          }}
-        >
-          <div className="text-center sm:text-left">
-            <div className="flex items-center gap-2 mb-1">
-              <Heart className="w-4 h-4 text-[#D94F5C]" />
-              <h4 className="font-display font-bold text-sm text-[#536B45] uppercase tracking-wider">
-                {t.attireTitle}
-              </h4>
-            </div>
-            <p className="text-xs text-[#685148]/80">{t.attireSub}</p>
-          </div>
-          <div className="flex items-center gap-3">
-            {COLOR_SWATCHES.map((sw, i) => (
-              <div
-                key={sw.name}
-                className="flex flex-col items-center gap-1"
-                style={{
-                  opacity: attireVisible ? 1 : 0,
-                  animation: attireVisible ? `popIn 0.5s ${0.15 + i * 0.08}s ease-out both` : 'none',
-                }}
-              >
-                <span
-                  className="w-9 h-9 rounded-full border-3 border-white shadow-md transition-transform hover:scale-110 cursor-default"
-                  style={{ backgroundColor: sw.hex, boxShadow: `0 4px 12px ${sw.hex}55` }}
-                  title={sw.name}
-                />
-                <span className="text-[9px] font-display text-[#685148]">{sw.name.split(' ')[0]}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

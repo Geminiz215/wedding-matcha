@@ -66,16 +66,6 @@ export const Scene07SaveTheDate: React.FC<Scene07SaveTheDateProps> = ({
           {/* Gradient ring border */}
           <div className="absolute inset-0 rounded-[2.5rem] pointer-events-none" style={{ background: 'linear-gradient(135deg, rgba(143,175,120,0.15), transparent 40%, rgba(217,79,92,0.15))', }} />
 
-          {/* Corner stamps */}
-          <div className="flex items-center justify-between border-b-2 border-dashed border-[#C7D9AA] pb-4 mb-8 text-xs font-display font-bold text-[#536B45]">
-            <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#8FAF78]" />
-              {t.batchTag}
-            </span>
-            <span className="bg-[#FBE0E2] text-[#D94F5C] px-3 py-1 rounded-full border border-[#F29BA6]">
-              {t.organicBadge}
-            </span>
-          </div>
 
           <div className="text-center">
             {/* Cup illustration */}
