@@ -162,7 +162,7 @@ export const Scene01Hero: React.FC<Scene01HeroProps> = ({
                 className={`px-3 py-1 rounded-full text-xs font-display font-bold transition-all cursor-pointer ${lang === 'en'
                   ? 'bg-[#536B45] text-white shadow-sm'
                   : 'text-[#685148] hover:bg-white'
-                }`}
+                  }`}
                 aria-pressed={lang === 'en'}
               >
                 🇬🇧 English
@@ -173,7 +173,7 @@ export const Scene01Hero: React.FC<Scene01HeroProps> = ({
                 className={`px-3 py-1 rounded-full text-xs font-display font-bold transition-all cursor-pointer ${lang === 'id'
                   ? 'bg-[#D94F5C] text-white shadow-sm'
                   : 'text-[#685148] hover:bg-white'
-                }`}
+                  }`}
                 aria-pressed={lang === 'id'}
               >
                 🇮🇩 Indonesia
@@ -182,7 +182,7 @@ export const Scene01Hero: React.FC<Scene01HeroProps> = ({
           </div>
 
           {/* Guest badge */}
-          <div
+          {/* <div
             className="mb-5 inline-flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 glass-card-pink border-2 border-[#F29BA6]/60 px-5 py-2.5 rounded-2xl sm:rounded-full shadow-lg"
             style={{ animation: mounted && !reducedMotion ? 'fadeDown 0.6s 0.2s ease-out both' : 'none' }}
           >
@@ -194,7 +194,7 @@ export const Scene01Hero: React.FC<Scene01HeroProps> = ({
             <span className="text-sm sm:text-base font-display font-bold text-[#D94F5C]">
               {t.dear} {guestData.name.toUpperCase()} ♡
             </span>
-          </div>
+          </div> */}
 
           {/* Eyebrow */}
           <p
