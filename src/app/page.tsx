@@ -6,7 +6,7 @@ import { CafeMusicBoxEngine } from '@/lib/audioEngine';
 import { useGuestName, sanitizeGuestName } from '@/hooks/useGuestName';
 import { WishItem, RsvpFormData } from '@/types/wedding';
 import { Language, TRANSLATIONS } from '@/config/translations';
-import { HeaderGuestBar, FloatingControls } from '@/components/layout';
+import { FloatingControls } from '@/components/layout';
 import {
   Scene01Hero,
   Scene02CupOfLove,
@@ -265,13 +265,6 @@ export default function WeddingInvitationPage() {
 
   return (
     <>
-      {/* 1. Header Bar: Personalization, Language Switcher & Live URL Tester */}
-      <HeaderGuestBar
-        guestData={guestData}
-        setSimulatedQuery={setSimulatedQuery}
-        lang={lang}
-        onLanguageChange={setLang}
-      />
 
       {/* 2. Floating Controls: Audio Engine, Reduced Motion & Scroll Progress */}
       <FloatingControls
