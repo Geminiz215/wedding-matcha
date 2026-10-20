@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-display {
+  font-family: 'Fredoka', 'Nunito', sans-serif;
+}
+.font-serif-romantic {
+  font-family: 'Fraunces', Georgia, serif;
+}
+.font-body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.2deg); }
+}
+@keyframes berryBob {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(-6deg); }
+}
+@keyframes slowDrift1 {
+  0%, 100% { transform: translate(55px, 195px) rotate(0deg); }
+  50% { transform: translate(50px, 182px) rotate(12deg); }
+}
+@keyframes slowDrift2 {
+  0%, 100% { transform: translate(318px, 225px) rotate(25deg); }
+  50% { transform: translate(324px, 212px) rotate(14deg); }
+}
+@keyframes burstOut {
+  0% { transform: scale(0.5); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.cup-float-group {
+  animation: gentleFloat 4.5s ease-in-out infinite;
+}
+.berry-bob-slow {
+  animation: berryBob 3.6s ease-in-out infinite;
+}
+.float-slow-1 {
+  animation: slowDrift1 5.2s ease-in-out infinite;
+}
+.float-slow-2 {
+  animation: slowDrift2 4.8s ease-in-out infinite;
+}
+
+/* Paper dot grid subtle texture */
+.cafe-paper-grid {
+  background-image: radial-gradient(#8FAF78 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.strawberry-paper-dots {
+  background-image: radial-gradient(#F29BA6 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
