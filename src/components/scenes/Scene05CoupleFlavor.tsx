@@ -111,7 +111,7 @@ export const Scene05CoupleFlavor: React.FC<Scene05CoupleFlavorProps> = ({
                   </div>
                   <div className="absolute -bottom-3 -right-3 bg-white px-3.5 py-1 rounded-full shadow-md border border-[#8FAF78] text-xs font-display font-bold text-[#536B45] flex items-center gap-1.5">
                     <span>🍵</span>
-                    <span>The Groom</span>
+                    <span>{lang === 'id' ? 'Mempelai Pria' : 'The Groom'}</span>
                   </div>
                 </div>
               </div>
@@ -195,7 +195,7 @@ export const Scene05CoupleFlavor: React.FC<Scene05CoupleFlavorProps> = ({
                   </div>
                   <div className="absolute -bottom-3 -left-3 bg-white px-3.5 py-1 rounded-full shadow-md border border-[#F29BA6] text-xs font-display font-bold text-[#D94F5C] flex items-center gap-1.5">
                     <span>🍓</span>
-                    <span>The Bride</span>
+                    <span>{lang === 'id' ? 'Mempelai Wanita' : 'The Bride'}</span>
                   </div>
                 </div>
               </div>
@@ -227,7 +227,7 @@ export const Scene05CoupleFlavor: React.FC<Scene05CoupleFlavorProps> = ({
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-[#F29BA6] px-5 py-2.5 rounded-full shadow-md">
               <Sparkles className="w-4 h-4 text-[#D94F5C]" />
               <span className="font-serif-romantic italic text-[#536B45] text-sm">
-                Two flavors, one perfect blend ✨
+                {lang === 'id' ? 'Dua kepribadian, satu tujuan bersama ✨' : 'Two flavors, one perfect blend ✨'}
               </span>
               <Sparkles className="w-4 h-4 text-[#8FAF78]" />
             </div>

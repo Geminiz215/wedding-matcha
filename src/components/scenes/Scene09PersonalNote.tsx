@@ -91,7 +91,7 @@ export const Scene09PersonalNote: React.FC<Scene09PersonalNoteProps> = ({
             </div>
 
             <p className="font-bold text-xl text-[#D94F5C]">
-              {t.dearLabel} {guestData.name},
+              {t.dearLabel} {guestData.isPersonalized ? guestData.name : (lang === 'id' ? 'Teman-teman & Keluarga' : 'Family & Friends')},
             </p>
 
             {guestData.isPersonalized ? (

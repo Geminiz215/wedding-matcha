@@ -112,13 +112,13 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-[#DCE8C8] text-xs font-display font-bold text-[#536B45] mb-4 shadow-sm">
             <Gift className="w-3.5 h-3.5 text-[#D94F5C]" />
             <span>
-              {isId ? 'TANDA KASIH & AMPLOP DIGITAL' : 'WEDDING GIFT & LOVE ENVELOPE'}
+              {isId ? 'TANDA KASIH & HADIAH' : 'WEDDING GIFT & ENVELOPE'}
             </span>
             <Sparkles className="w-3.5 h-3.5 text-[#536B45]" />
           </div>
 
           <h2 className="font-serif-romantic text-3xl sm:text-5xl font-bold text-[#536B45] leading-tight mb-4">
-            {isId ? 'Kirim Tanda Kasih untuk ' : 'A Token of Love for '}
+            {isId ? 'Hadiah Pernikahan untuk ' : 'Wedding Gift for '}
             <span className="italic font-normal text-[#D94F5C] block sm:inline">
               Nadia & Raka
             </span>
@@ -126,8 +126,8 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
 
           <p className="text-sm sm:text-base text-[#685148] leading-relaxed">
             {isId
-              ? 'Doa restu dan kehadiran Anda merupakan karunia terindah bagi kami. Namun jika Anda berkenan memberikan tanda kasih untuk menyertai awal perjalanan kami, Anda dapat mengirimkannya melalui:'
-              : 'Your warm presence and heartfelt prayers are the greatest blessings for us. However, if you wish to honor our new beginning with a token of love, you may do so through:'}
+              ? 'Doa dan kehadiranmu sudah menjadi hadiah terbaik bagi kami. Namun jika kamu ingin memberikan tanda kasih atau hadiah pernikahan, informasi di bawah ini bisa kamu gunakan:'
+              : 'Your prayers and presence mean the world to us. If you wish to send a wedding gift or token of love, you can use the details below:'}
           </p>
 
           {/* Navigation Tabs */}
@@ -155,7 +155,7 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
               }`}
             >
               <QrCode className="w-4 h-4" />
-              <span>{isId ? 'QRIS Digital' : 'QRIS Code'}</span>
+              <span>QRIS</span>
             </button>
 
             <button
@@ -317,7 +317,7 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
                       {isCopied ? (
                         <>
                           <CheckCircle2 className="w-4 h-4 text-[#8FAF78] animate-bounce" />
-                          <span>{isId ? 'Nomor Rekening Tersalin!' : 'Account Number Copied!'}</span>
+                          <span>{isId ? 'Nomor Rekening Berhasil Disalin!' : 'Account Number Copied!'}</span>
                         </>
                       ) : (
                         <>
@@ -330,8 +330,8 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
                     <a
                       href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                         isId
-                          ? `Halo ${card.recipientNickname}, saya ingin mengonfirmasi pengiriman tanda kasih pernikahan ke rekening ${card.bankName} (${card.accountNumber}). Selamat berbahagia!`
-                          : `Hello ${card.recipientNickname}, I would like to confirm my wedding gift transfer to ${card.bankName} (${card.accountNumber}). Wishing you a lifetime of joy!`
+                          ? `Halo ${card.recipientNickname}, saya ingin mengonfirmasi pengiriman hadiah pernikahan ke rekening ${card.bankName} (${card.accountNumber}). Selamat atas pernikahannya ya!`
+                          : `Hello ${card.recipientNickname}, I would like to confirm my wedding gift transfer to ${card.bankName} (${card.accountNumber}). Wishing you both a lifetime of happiness!`
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -458,8 +458,8 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
 
               <p className="text-xs text-[#685148] leading-relaxed mb-4">
                 {isId
-                  ? 'Buka aplikasi mobile banking Anda, pilih menu QRIS / Scan, lalu arahkan kamera ke kode QR di atas.'
-                  : 'Open your mobile banking or e-wallet app, choose QRIS / Scan, and point your camera at the QR code above.'}
+                  ? 'Buka aplikasi mobile banking atau e-wallet pilihanmu, pilih menu QRIS / Scan, lalu arahkan kamera ke kode QR di atas.'
+                  : 'Open your mobile banking or e-wallet app, select QRIS / Scan, and point your camera at the QR code above.'}
               </p>
             </div>
           </div>
@@ -484,7 +484,7 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
                     {isId ? 'Kirim Kado Fisik' : 'Physical Gift Delivery'}
                   </h3>
                   <p className="text-xs text-[#685148]/80">
-                    {isId ? 'Alamat Kediaman Nadia & Raka' : 'Residence of Nadia & Raka'}
+                    {isId ? 'Alamat Pengiriman Nadia & Raka' : 'Delivery Address for Nadia & Raka'}
                   </p>
                 </div>
               </div>
@@ -495,7 +495,7 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
                   <Heart className="w-4 h-4 text-[#D94F5C] shrink-0 mt-1" />
                   <div>
                     <span className="text-[11px] font-display font-bold text-[#685148]/60 uppercase tracking-wider block">
-                      {isId ? 'Nama Penerima' : 'Recipient Name'}
+                      {isId ? 'Nama Penerima' : 'Recipient'}
                     </span>
                     <span className="font-display font-bold text-sm text-[#536B45]">
                       {giftAddress.recipientName}
@@ -522,7 +522,7 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
                   <ShieldCheck className="w-4 h-4 text-[#8FAF78] shrink-0 mt-1" />
                   <div>
                     <span className="text-[11px] font-display font-bold text-[#685148]/60 uppercase tracking-wider block">
-                      {isId ? 'Kontak / No. Telepon' : 'Contact Phone'}
+                      {isId ? 'No. Telepon / WhatsApp' : 'Phone / WhatsApp'}
                     </span>
                     <span className="font-mono text-xs font-bold text-[#536B45]">
                       {giftAddress.phone}
@@ -569,7 +569,7 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
                 <a
                   href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                     isId
-                      ? 'Halo Nadia & Raka, saya telah mengirimkan kado fisik melalui kurir. Semoga suka ya! Selamat atas pernikahannya!'
+                      ? 'Halo Nadia & Raka, saya telah mengirimkan kado fisik melalui kurir. Semoga bermanfaat dan kalian suka ya! Selamat atas pernikahannya!'
                       : 'Hello Nadia & Raka, I have sent a physical gift via courier. Hope you like it! Congratulations on your wedding!'
                   )}`}
                   target="_blank"
@@ -594,13 +594,13 @@ export const SceneWeddingGift: React.FC<SceneWeddingGiftProps> = ({
         >
           <div className="inline-flex items-center justify-center gap-2 text-xs font-display font-bold text-[#536B45] mb-2">
             <Heart className="w-3.5 h-3.5 text-[#D94F5C] fill-current" />
-            <span>{isId ? 'Ungkapan Terima Kasih' : 'With Heartfelt Gratitude'}</span>
+            <span>{isId ? 'Terima Kasih' : 'With Sincere Thanks'}</span>
             <Heart className="w-3.5 h-3.5 text-[#D94F5C] fill-current" />
           </div>
           <p className="text-xs sm:text-sm text-[#685148]/85 italic font-serif-romantic leading-relaxed">
             {isId
-              ? '“Setiap doa, senyuman, dan tanda kasih dari Anda adalah pelita yang menghangatkan langkah awal rumah tangga kami. Semoga Tuhan senantiasa melimpahkan berkah dan kebaikan berlipat ganda untuk Anda dan keluarga.”'
-              : '“Every prayer, smile, and token of kindness warms the first steps of our new journey together. May God bless you and your family with boundless grace and joy.”'}
+              ? '“Terima kasih banyak atas doa restu, ucapan hangat, dan perhatianmu untuk kami berdua. Semoga kebaikan dan kebahagiaan yang sama selalu menyertaimu dan keluarga.”'
+              : '“Thank you so much for your blessings, warm wishes, and kindness towards us. May happiness and warmth always surround you and your family.”'}
           </p>
         </div>
       </div>

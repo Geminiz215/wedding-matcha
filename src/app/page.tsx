@@ -24,8 +24,8 @@ import {
 } from '@/components/scenes';
 
 export default function WeddingInvitationPage() {
-  // 0. Language State (DEFAULT: 'en' / English)
-  const [lang, setLang] = useState<Language>('en');
+  // 0. Language State (DEFAULT: 'id' / Bahasa Indonesia)
+  const [lang, setLang] = useState<Language>('id');
 
   // 1. Guest Personalization Hook (?to= / ?guest= / fallback)
   const { guestData, setSimulatedQuery } = useGuestName();
@@ -101,12 +101,12 @@ export default function WeddingInvitationPage() {
     if (typeof document !== 'undefined') {
       if (lang === 'id') {
         document.title = guestData.isPersonalized
-          ? `Kepada Yth. ${guestData.name} ♡ — Undangan Pernikahan Nadia & Raka`
-          : `Nadia & Raka — Undangan Pernikahan Matcha & Strawberry`;
+          ? `Untuk ${guestData.name} ♡ — Undangan Pernikahan Nadia & Raka`
+          : `Nadia & Raka — Undangan Pernikahan`;
       } else {
         document.title = guestData.isPersonalized
-          ? `Dear ${guestData.name} ♡ — Nadia & Raka Wedding Invitation`
-          : `Nadia & Raka — Matcha & Strawberry Wedding Invitation`;
+          ? `For ${guestData.name} ♡ — Nadia & Raka Wedding Invitation`
+          : `Nadia & Raka — Wedding Invitation`;
       }
     }
   }, [guestData, lang]);
@@ -221,7 +221,7 @@ export default function WeddingInvitationPage() {
         guests: Number(rsvpForm.guests) || 1,
         drink: rsvpForm.drink,
         message: cleanMsg,
-        timestamp: lang === 'id' ? 'Baru saja • Sesi Demo' : 'Just now • Demo Session',
+        timestamp: lang === 'id' ? 'Baru saja' : 'Just now',
         color: rsvpForm.attendance === 'Hadir' ? 'pink' : 'green'
       };
 
@@ -254,7 +254,7 @@ export default function WeddingInvitationPage() {
       guests: 1,
       drink: 'Strawberry Matcha Love 🍓🍵',
       message: cleanText,
-      timestamp: lang === 'id' ? 'Baru saja • Sesi Demo' : 'Just now • Demo Session',
+      timestamp: lang === 'id' ? 'Baru saja' : 'Just now',
       color: wishes.length % 2 === 0 ? 'green' : 'pink'
     };
 

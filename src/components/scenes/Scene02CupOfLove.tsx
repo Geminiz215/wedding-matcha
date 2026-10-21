@@ -78,22 +78,22 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-[#C7D9AA] text-xs font-display font-bold text-[#536B45] mb-4 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#D94F5C]" />
             <span>
-              {isId ? 'SCENE 02 • BAGAIMANA SEMUA DIMULAI' : 'SCENE 02 • WHERE IT ALL BEGAN'}
+              {isId ? 'TENTANG KAMI • DARI MASA KECIL' : 'ABOUT US • FROM OUR EARLY DAYS'}
             </span>
             <Sparkles className="w-3.5 h-3.5 text-[#536B45]" />
           </div>
 
           <h2 className="font-serif-romantic text-3xl sm:text-5xl lg:text-6xl font-bold text-[#536B45] leading-tight mb-4">
-            {isId ? 'Dua Jiwa Kecil, ' : 'Two Little Souls, '}
+            {isId ? 'Cerita Masa Kecil, ' : 'From Little Steps, '}
             <span className="italic font-normal text-[#D94F5C] block sm:inline">
-              {isId ? 'Satu Takdir Manis' : 'One Sweet Destiny'}
+              {isId ? 'Menuju Hari Bersama' : 'To Our Wedding Day'}
             </span>
           </h2>
 
           <p className="text-base sm:text-lg text-[#685148] leading-relaxed max-w-2xl mx-auto">
             {isId
-              ? 'Sebelum secangkir matcha dan stroberi dipertemukan, dua anak kecil ini telah memulai kisah bahagianya masing-masing dengan senyum dan mimpi yang tulus.'
-              : 'Before matcha and strawberry were blended into our signature cup, these two cheerful children lived their own little worlds, destined to meet one day.'}
+              ? 'Jauh sebelum kami saling kenal, kami tumbuh dengan cerita dan kebiasaan masing-masing. Sekarang, cerita itu bertemu di satu jalan yang sama.'
+              : 'Long before we crossed paths, we each grew up with our own little worlds and habits. Today, those separate paths come together as one.'}
           </p>
 
           {/* Interactive Switcher: Masa Kecil vs Hari Ini */}
@@ -107,7 +107,7 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
                 }`}
             >
               <span>🧸</span>
-              <span>{isId ? 'Masa Kecil (~1998-2000)' : 'Childhood Memories'}</span>
+              <span>{isId ? 'Masa Kecil (~1998-2000)' : 'Childhood Days'}</span>
             </button>
             <button
               type="button"
@@ -118,7 +118,7 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
                 }`}
             >
               <span>💍</span>
-              <span>{isId ? 'Hari Ini (Menuju Pelaminan)' : 'Today (To The Altar)'}</span>
+              <span>{isId ? 'Sekarang (Menuju Pernikahan)' : 'Present Day'}</span>
             </button>
           </div>
         </div>
@@ -172,7 +172,7 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
                       {WEDDING_CONFIG.couple.groom.nickname}
                     </h3>
                     <span className="text-[11px] font-display font-bold text-[#8FAF78] uppercase tracking-wider bg-[#F0F5EB] px-2.5 py-0.5 rounded-full border border-[#DCE8C8]">
-                      {photoMode === 'childhood' ? (isId ? 'Si Pecinta Hening' : 'The Calm Thinker') : 'Matcha Soul'}
+                      {photoMode === 'childhood' ? (isId ? 'Suka Ketenangan' : 'The Quiet Observer') : 'Matcha Soul'}
                     </span>
                   </div>
 
@@ -183,19 +183,19 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
                   <p className="text-xs text-[#685148] leading-relaxed mb-3">
                     {photoMode === 'childhood'
                       ? isId
-                        ? 'Sejak kecil gemar duduk santai di halaman, menggambar sketsa imajinatif, dan suka mengamati ketenangan alam dengan mata berbinar.'
-                        : 'Since early childhood, he loved quiet garden afternoons, sketching imaginative ideas, and observing the serene world around him.'
+                        ? 'Dari kecil Raka suka suasana tenang, senang menggambar sketsa, dan paling betah menghabiskan sore santai di rumah atau halaman.'
+                        : 'From a young age, Raka enjoyed quiet moments, loved sketching buildings, and felt most at home spending peaceful afternoons outdoors.'
                       : isId
-                        ? 'Sosok arsitek berjiwa tenang yang selalu menjadi pelindung terhangat dan penenang di setiap langkah Nadia.'
-                        : 'A calm-spirited architect who remains Nadia’s most steady anchor and warmest sanctuary.'}
+                        ? 'Arsitek yang tenang, pendengar yang baik, dan selalu jadi tempat bersandar paling nyaman buat Nadia.'
+                        : 'A thoughtful architect and patient listener who always brings calm and reassurance into Nadia’s world.'}
                   </p>
 
                   {/* Little trait tags */}
                   <div className="flex flex-wrap gap-1.5">
                     {(photoMode === 'childhood'
                       ? isId
-                        ? ['🌿 Cinta Kebun', '✏️ Suka Menggambar', '🍵 Penuh Ketenangan']
-                        : ['🌿 Nature Lover', '✏️ Sketch Dreamer', '🍵 Quiet Calm']
+                        ? ['🌿 Suka Alam', '✏️ Hobi Menggambar', '🍵 Tenang & Pengamat']
+                        : ['🌿 Nature Lover', '✏️ Sketch Dreamer', '🍵 Quiet & Calm']
                       : WEDDING_CONFIG.couple.groom.traits.slice(0, 3)
                     ).map((trait) => (
                       <span
@@ -245,10 +245,10 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
             </div>
 
             <div className="font-serif-romantic italic text-lg font-bold text-[#536B45]">
-              {isId ? 'Dua Masa Kecil' : 'Two Childhoods'}
+              {isId ? 'Dua Cerita' : 'Two Stories'}
             </div>
             <div className="text-[10px] font-display font-extrabold text-[#D94F5C] uppercase tracking-widest mt-0.5 mb-2">
-              {isId ? 'Satu Muara Cinta' : 'One Sweet Destiny'}
+              {isId ? 'Satu Tujuan' : 'One Journey'}
             </div>
 
             <div className="hidden lg:flex items-center gap-1 text-[11px] text-[#685148]/60 font-display">
@@ -307,7 +307,7 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
                       {WEDDING_CONFIG.couple.bride.nickname}
                     </h3>
                     <span className="text-[11px] font-display font-bold text-[#D94F5C] uppercase tracking-wider bg-[#FDF0F2] px-2.5 py-0.5 rounded-full border border-[#F9CAD0]">
-                      {photoMode === 'childhood' ? (isId ? 'Gadis Berpita Manis' : 'Little Sweetheart') : 'Berry Sweet'}
+                      {photoMode === 'childhood' ? (isId ? 'Ceria & Penuh Energi' : 'Bubbly & Joyful') : 'Berry Sweet'}
                     </span>
                   </div>
 
@@ -318,19 +318,19 @@ export const Scene02CupOfLove: React.FC<Scene02CupOfLoveProps> = ({
                   <p className="text-xs text-[#685148] leading-relaxed mb-3">
                     {photoMode === 'childhood'
                       ? isId
-                        ? 'Gadis cilik yang selalu penuh tawa ceria, suka pita merah jambu di rambutnya, dan pencinta segala camilan strawberry yang manis.'
-                        : 'A bubbly little girl full of radiant giggles, fond of pink hair ribbons, and completely fascinated by sweet strawberry treats.'
+                        ? 'Sejak kecil Nadia selalu ceria, banyak ide seru, suka warna-warni cerah, dan paling gembira kalau diajak makan kue atau stroberi.'
+                        : 'Always lively and full of smiles as a kid, Nadia loved bright colors, fun ideas, and anything related to sweet berries and pastries.'
                       : isId
-                        ? 'Desainer kreatif berhati lembut yang menghadirkan warna, keceriaan, dan rasa manis tak terhingga dalam hari-hari Raka.'
-                        : 'A creative designer whose tender heart brings endless color, laughter, and sweetness to Raka’s everyday life.'}
+                        ? 'Desainer kreatif yang hangat dan ekspresif. Kehadirannya selalu bikin suasana jadi lebih hidup dan penuh tawa.'
+                        : 'A creative designer full of warmth and spontaneity, bringing vibrant energy and daily laughter into Raka’s life.'}
                   </p>
 
                   {/* Little trait tags */}
                   <div className="flex flex-wrap gap-1.5">
                     {(photoMode === 'childhood'
                       ? isId
-                        ? ['🎀 Pita Merah Jambu', '🍰 Suka Kue Manis', '☀️ Senyum Mentari']
-                        : ['🎀 Pink Ribbons', '🍰 Sweet Tooth', '☀️ Sunny Giggles']
+                        ? ['🎀 Selalu Ceria', '🍰 Suka Camilan', '☀️ Penuh Energi']
+                        : ['🎀 Always Cheerful', '🍰 Sweet Tooth', '☀️ Full of Energy']
                       : WEDDING_CONFIG.couple.bride.traits.slice(0, 3)
                     ).map((trait) => (
                       <span

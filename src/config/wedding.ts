@@ -15,22 +15,22 @@ export const WEDDING_CONFIG: WeddingConfig = {
       fullName: 'Nadia Larasati Putri, S.Ds.',
       photo: '/images/bride.jpg',
       parents: 'Putri Pertama dari Bpk. Hendra Wijaya & Ibu Sofia Kartika',
-      flavorTitle: 'A LITTLE SWEET',
-      flavorTag: 'Fresh Strawberry Puree 🍓',
+      flavorTitle: 'SENTUHAN CERIA',
+      flavorTag: 'Strawberry Segar 🍓',
       personality:
-        'Warm, expressive, joyful, and full of sweet surprises. Loves sunny café mornings, strawberry shortcake, polaroid cameras, and spontaneous weekend road trips.',
-      traits: ['Sweet & Affectionate', 'Dessert Enthusiast', 'Creative Soul', 'Morning Sunshine']
+        'Hangat, ekspresif, dan selalu penuh keceriaan. Senang suasana kafe pagi hari, kue stroberi, kamera polaroid, dan jalan-jalan santai di akhir pekan.',
+      traits: ['Hangat & Perhatian', 'Pencinta Dessert', 'Jiwa Kreatif', 'Penuh Energi Positif']
     },
     groom: {
       nickname: 'Raka',
       fullName: 'Raka Pradipta Mahendra, S.Ars.',
       photo: '/images/groom.jpg',
       parents: 'Putra Kedua dari Bpk. Surya Mahendra & Ibu Dewi Anggraini',
-      flavorTitle: 'A LITTLE CALM',
-      flavorTag: 'Ceremonial Uji Matcha 🍵',
+      flavorTitle: 'SENTUHAN TENANG',
+      flavorTag: 'Matcha Uji Hangat 🍵',
       personality:
-        'Calm, grounded, comforting, and quietly thoughtful. Loves slow pour-over tea rituals, architectural sketches, rainy afternoon playlists, and making Nadia laugh.',
-      traits: ['Calm & Comforting', 'Matcha Barista', 'Gentle Listener', 'Steady Warmth']
+        'Tenang, penuh perhatian, dan dapat diandalkan. Menyukai seduhan teh hangat, sketsa arsitektur, musik santai saat sore gerimis, dan membuat Nadia tersenyum.',
+      traits: ['Tenang & Mengayomi', 'Penyeduh Teh', 'Pendengar yang Baik', 'Sabar & Hangat']
     }
   },
   weddingDateISO: '2027-10-24T08:00:00+07:00',
@@ -41,7 +41,7 @@ export const WEDDING_CONFIG: WeddingConfig = {
   events: {
     akad: {
       title: 'AKAD NIKAH',
-      subtitle: 'The Sacred Vows',
+      subtitle: 'Prosesi Akad Nikah',
       dayDate: 'Minggu, 24 Oktober 2027',
       time: '08.00 – 10.00 WIB',
       startISO: '20271024T010000Z',
@@ -49,11 +49,11 @@ export const WEDDING_CONFIG: WeddingConfig = {
       venueName: 'The Botanical Glasshouse Conservatory',
       address: 'Jl. Asia Afrika No. 8, Gelora Senayan, Kec. Tanah Abang, Kota Jakarta Pusat 10270',
       mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Senayan+Jakarta+Pusat+Glasshouse',
-      note: 'Intimate morning ceremony surrounded by lush greenery and warm sunlight.'
+      note: 'Akad nikah diadakan secara khidmat di pagi hari dikelilingi taman hijau yang asri.'
     },
     resepsi: {
-      title: 'RESEPSI & CAFÉ SOIRÉE',
-      subtitle: 'Sweet Garden Celebration',
+      title: 'RESEPSI PERNIKAHAN',
+      subtitle: 'Syukuran & Perayaan Bersama',
       dayDate: 'Minggu, 24 Oktober 2027',
       time: '11.00 – 14.00 WIB',
       startISO: '20271024T040000Z',
@@ -61,62 +61,62 @@ export const WEDDING_CONFIG: WeddingConfig = {
       venueName: 'The Botanical Glasshouse Conservatory — Grand Lawn',
       address: 'Jl. Asia Afrika No. 8, Gelora Senayan, Kec. Tanah Abang, Kota Jakarta Pusat 10270',
       mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Senayan+Jakarta+Pusat+Glasshouse',
-      note: 'Featuring our signature live Matcha & Strawberry Latte Bar and artisanal dessert station.'
+      note: 'Dimeriahkan live beverage bar Matcha & Strawberry spesial kami serta aneka sajian dessert.'
     }
   },
   storyTimeline: [
     {
       id: 'first-sip',
-      step: 'RECIPE 01 • MAY 2023',
-      title: 'FIRST SIP',
-      subtitle: 'The day we met.',
+      step: 'LANGKAH 01 • MEI 2023',
+      title: 'PERTEMUAN PERTAMA',
+      subtitle: 'Saat kami pertama kali bertegur sapa.',
       location: 'Kissa Matcha Bar, Kemang',
       description:
-        'It started on a rainy Saturday afternoon when we accidentally reached for the last Matcha Pistachio Kunafa pastry at the counter. Raka offered to split it in half, and Nadia ordered an iced strawberry matcha latte to share. Two hours of conversation felt like five minutes.',
-      recipeNote: 'Base: 30ml accidental meeting + 2 shy smiles',
-      stamp: '100% KISMET',
+        'Semuanya berawal di suatu sore yang gerimis di Kemang, saat kami tidak sengaja berebut pastry Matcha Pistachio Kunafa terakhir di kasir. Raka menawarkan untuk membaginya berdua, dan Nadia memesan iced strawberry matcha latte untuk dinikmati bersama. Obrolan santai dua jam terasa seperti lima menit.',
+      recipeNote: 'Pertemuan tidak sengaja yang berlanjut obrolan hangat',
+      stamp: 'AWAL CERITA',
       rotation: '-2deg',
       accent: 'matcha',
       illustrationType: 'cup'
     },
     {
       id: 'little-sweeter',
-      step: 'RECIPE 02 • DECEMBER 2024',
-      title: 'A LITTLE SWEETER',
-      subtitle: 'When friendship became something more.',
-      location: 'Bandung Highland Tea Garden',
+      step: 'LANGKAH 02 • DESEMBER 2024',
+      title: 'MAKIN DEKAT',
+      subtitle: 'Saat pertemanan mulai terasa istimewa.',
+      location: 'Kebun Teh Lembang, Bandung',
       description:
-        'After months of weekend café-hopping and exchanging playlists, a misty morning walk through a tea plantation made everything clear. Raka brought a thermos of warm matcha; Nadia brought fresh strawberries. Under a tiny umbrella, friendship bloomed into love.',
-      recipeNote: 'Add: 50g crushed strawberries + endless late-night talks',
-      stamp: 'EXTRA SWEET',
+        'Setelah berbulan-bulan sering jalan bareng dan saling bertukar playlist musik, jalan pagi di perkebunan teh membuat semuanya makin jelas. Raka membawa termos matcha hangat, Nadia membawa sekotak stroberi segar. Di momen sederhana itu, kami merasa saling nyaman dan ingin terus berjalan bersama.',
+      recipeNote: 'Banyak obrolan seru dan saling berbagi cerita',
+      stamp: 'LEBIH DEKAT',
       rotation: '2deg',
       accent: 'strawberry',
       illustrationType: 'strawberry'
     },
     {
       id: 'favorite-blend',
-      step: 'RECIPE 03 • AUGUST 2026',
-      title: 'OUR FAVORITE BLEND',
-      subtitle: 'The moments that made us closer.',
-      location: 'Kyoto & Uji, Japan',
+      step: 'LANGKAH 03 • AGUSTUS 2026',
+      title: 'SALING MELENGKAPI',
+      subtitle: 'Belajar saling mengerti dan menerima.',
+      location: 'Kyoto & Uji, Jepang',
       description:
-        'We learned that we didn’t have to be the same to be right for each other. Raka’s calm steadiness became Nadia’s safe harbor, and Nadia’s bubbly laughter became Raka’s favorite melody. Earthy matcha and bright strawberry—two opposites creating harmony.',
-      recipeNote: 'Swirl gently: Earthy calm + Joyful sweetness',
-      stamp: 'PERFECT RATIO',
+        'Kami belajar bahwa untuk melangkah bersama, kami tidak harus selalu sama dalam segala hal. Ketenangan Raka menjadi penyejuk bagi Nadia, dan keceriaan Nadia selalu berhasil mewarnai hari-hari Raka. Dua kepribadian yang berbeda, tapi saling mengisi dengan pas.',
+      recipeNote: 'Dua sifat berbeda yang saling mengisi dan menguatkan',
+      stamp: 'COCOK BERSAMA',
       rotation: '-1.5deg',
       accent: 'cream',
       illustrationType: 'pastry'
     },
     {
       id: 'forever-making',
-      step: 'RECIPE 04 • 24 OCTOBER 2027',
-      title: 'FOREVER IN THE MAKING',
-      subtitle: 'The decision to spend our lives together.',
+      step: 'LANGKAH 04 • 24 OKTOBER 2027',
+      title: 'MELANGKAH BERSAMA',
+      subtitle: 'Keputusan untuk memulai babak baru.',
       location: 'Jakarta, Indonesia',
       description:
-        'With a custom recipe card hidden at the bottom of a strawberry matcha cup that read "Will you be my forever blend?", Nadia said the easiest "Yes!" Now, we are ready to pour our hearts into the sweetest chapter of our lives with all of you.',
-      recipeNote: 'Serve with: Warm blessings, family, and forever love',
-      stamp: 'BREWED FOR LIFE',
+        'Lewat pesan kecil di bawah cangkir minuman favorit kami yang bertuliskan "Yuk, jalani hari-hari ke depan bareng aku selamanya?", Nadia menjawab "Iya!" tanpa ragu. Sekarang, kami siap melangkah ke jenjang pernikahan dan merayakannya bersama orang-orang tercinta.',
+      recipeNote: 'Doa restu keluarga dan kehadiran orang-orang terdekat',
+      stamp: 'MENUJU PELAMINAN',
       rotation: '1.8deg',
       accent: 'both',
       illustrationType: 'cup'
@@ -125,11 +125,11 @@ export const WEDDING_CONFIG: WeddingConfig = {
   gallery: [
     {
       id: 'gal-1',
-      title: 'Sunday Morning Matcha Ritual',
-      category: 'Café Dates',
+      title: 'Ritual Seduh Teh Pagi Hari',
+      category: 'Kencan Kafe',
       aspect: 'portrait',
-      date: 'Kyoto, Autumn 2025',
-      caption: 'Whisking ceremonial Uji matcha while Nadia picks the sweetest strawberries.',
+      date: 'Kyoto, Musim Gugur 2025',
+      caption: 'Menyeduh matcha hangat di pagi hari sambil ngobrol santai bersama.',
       bgGradient: 'from-[#DCE8C8] via-[#FFF9EE] to-[#FBE0E2]',
       sticker: '🍵',
       rotation: '-2.5deg',
@@ -138,11 +138,11 @@ export const WEDDING_CONFIG: WeddingConfig = {
     },
     {
       id: 'gal-2',
-      title: 'Golden Hour in the Strawberry Greenhouse',
+      title: 'Sore Hari di Kebun Stroberi',
       category: 'Pre-Wedding',
       aspect: 'landscape',
-      date: 'Lembang, Spring 2026',
-      caption: 'Surrounded by rows of ripe red berries and soft afternoon sunbeams.',
+      date: 'Lembang, 2026',
+      caption: 'Menikmati udara sejuk pegunungan dan hangatnya matahari sore di perkebunan.',
       bgGradient: 'from-[#FBE0E2] via-[#FFF9EE] to-[#C7D9AA]',
       sticker: '🍓',
       rotation: '2deg',
@@ -151,11 +151,11 @@ export const WEDDING_CONFIG: WeddingConfig = {
     },
     {
       id: 'gal-3',
-      title: 'Splitting Our Favorite Kunafa Bun',
-      category: 'Candid',
+      title: 'Pastry Favorit Berdua',
+      category: 'Spontan',
       aspect: 'square',
       date: 'Senopati, Jakarta',
-      caption: 'Back where it all began—still sharing the crispy pistachio center every weekend.',
+      caption: 'Kembali ke tempat pertama kali kami bertemu, masih sering memesan menu yang sama.',
       bgGradient: 'from-[#FFF9EE] via-[#DCE8C8] to-[#F29BA6]/30',
       sticker: '🥐',
       rotation: '-1.5deg',
@@ -163,11 +163,11 @@ export const WEDDING_CONFIG: WeddingConfig = {
     },
     {
       id: 'gal-4',
-      title: 'Rainy Window & Polaroid Smiles',
-      category: 'Candid',
+      title: 'Sore Hujan & Foto Polaroid',
+      category: 'Spontan',
       aspect: 'portrait',
       date: 'Menteng, Jakarta',
-      caption: 'Two cups on a wooden table, raindrops on glass, and nowhere else we’d rather be.',
+      caption: 'Dua cangkir di meja kayu, gerimis di jendela kafe, dan obrolan yang tidak ada habisnya.',
       bgGradient: 'from-[#C7D9AA]/60 via-[#FFF9EE] to-[#FBE0E2]',
       sticker: '📸',
       rotation: '2.8deg',
@@ -176,11 +176,11 @@ export const WEDDING_CONFIG: WeddingConfig = {
     },
     {
       id: 'gal-5',
-      title: 'Picnic Under the Blossom Trees',
+      title: 'Piknik Santai di Kebun Raya',
       category: 'Pre-Wedding',
       aspect: 'landscape',
-      date: 'Botanical Garden, 2026',
-      caption: 'A linen blanket, handwritten letters, and our signature two-toned drinks.',
+      date: 'Kebun Raya, 2026',
+      caption: 'Menghabiskan akhir pekan dengan piknik santai dan camilan favorit.',
       bgGradient: 'from-[#FBE0E2] via-[#FFF9EE] to-[#DCE8C8]',
       sticker: '🌸',
       rotation: '-2deg',
@@ -188,11 +188,11 @@ export const WEDDING_CONFIG: WeddingConfig = {
     },
     {
       id: 'gal-6',
-      title: 'The "Yes!" Cup Moment',
-      category: 'Café Dates',
+      title: 'Momen Spesial di Sudut Kafe',
+      category: 'Kencan Kafe',
       aspect: 'square',
-      date: 'Our Favorite Corner, 2026',
-      caption: 'Right after Nadia read the secret note at the bottom of the cup.',
+      date: 'Kafe Favorit Kami, 2026',
+      caption: 'Tepat setelah Nadia membaca pesan kejutan di bawah cangkir minuman.',
       bgGradient: 'from-[#DCE8C8] via-[#FBE0E2]/50 to-[#FFF9EE]',
       sticker: '💍',
       rotation: '1.5deg',
@@ -207,7 +207,7 @@ export const WEDDING_CONFIG: WeddingConfig = {
       guests: 2,
       drink: 'Iced Strawberry Matcha Latte 🍓🍵',
       message:
-        'Selamat menempuh hidup baru Nadia & Raka! Semoga pernikahannya selalu manis seperti strawberry dan menenangkan seperti hangatnya matcha. Can’t wait to celebrate with you both!',
+        'Selamat menempuh hidup baru Nadia & Raka! Semoga pernikahannya penuh berkah, saling menguatkan, dan selalu kompak sampai tua nanti. Can’t wait to celebrate with you both!',
       timestamp: '2 jam yang lalu',
       color: 'pink'
     },
@@ -218,7 +218,7 @@ export const WEDDING_CONFIG: WeddingConfig = {
       guests: 2,
       drink: 'Ceremonial Uji Matcha Oat 🍵',
       message:
-        'Literally the cutest couple and the most adorable wedding invitation ever! Semoga lancar sampai hari H, langgeng selamanya sampai kakek nenek ya!',
+        'Pasangan favorit! Semoga seluruh persiapan dan acaranya lancar sampai hari H ya. Bahagia selalu Nadia dan Raka!',
       timestamp: '5 jam yang lalu',
       color: 'green'
     },
@@ -240,7 +240,7 @@ export const WEDDING_CONFIG: WeddingConfig = {
       guests: 1,
       drink: 'Matcha Pistachio Kunafa 🥐',
       message:
-        'Happy wedding Raka & Nadia! So sorry I’ll be in Tokyo on October 24th, but I’ll definitely raise a glass of Uji matcha for you two from afar! Happily ever after!',
+        'Happy wedding Raka & Nadia! Maaf banget belum bisa hadir langsung karena masih di luar kota tanggal 24 nanti, tapi doa terbaik dari jauh buat kalian berdua ya. Langgeng selalu!',
       timestamp: '2 hari yang lalu',
       color: 'green'
     }
@@ -283,7 +283,7 @@ export const WEDDING_CONFIG: WeddingConfig = {
     ],
     qris: {
       title: 'QRIS Pembayaran Digital',
-      description: 'Dapat di-scan dengan aplikasi mobile banking apa pun (BCA, Livin, GoPay, OVO, Dana)',
+      description: 'Bisa di-scan menggunakan aplikasi mobile banking atau e-wallet apa pun (BCA, Livin, GoPay, OVO, Dana)',
       imageUrl: ''
     },
     giftAddress: {
@@ -291,7 +291,7 @@ export const WEDDING_CONFIG: WeddingConfig = {
       phone: '+62 812-3456-7890',
       address: 'Jl. Melati Botanical No. 18, Kebayoran Baru',
       city: 'Jakarta Selatan, DKI Jakarta 12160',
-      note: 'Mohon sertakan nama pengirim pada label paket agar kami dapat menyampaikan ucapan terima kasih.'
+      note: 'Mohon sertakan nama pengirim pada label paket agar kami bisa menyampaikan terima kasih secara langsung.'
     }
   }
 };

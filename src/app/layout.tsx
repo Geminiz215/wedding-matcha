@@ -3,8 +3,8 @@ import './globals.css';
 import { WEDDING_CONFIG } from '@/config/wedding';
 
 export const metadata: Metadata = {
-  title: `${WEDDING_CONFIG.couple.bride.nickname} & ${WEDDING_CONFIG.couple.groom.nickname} — Matcha & Strawberry Wedding Invitation`,
-  description: `You're invited to celebrate our sweetest day! ${WEDDING_CONFIG.weddingDayDisplay} • ${WEDDING_CONFIG.events.akad.venueName}. ${WEDDING_CONFIG.hashtag}`,
+  title: `${WEDDING_CONFIG.couple.bride.nickname} & ${WEDDING_CONFIG.couple.groom.nickname} — Undangan Pernikahan`,
+  description: `Undangan Pernikahan ${WEDDING_CONFIG.couple.bride.nickname} & ${WEDDING_CONFIG.couple.groom.nickname}. ${WEDDING_CONFIG.weddingDayDisplay} di ${WEDDING_CONFIG.events.akad.venueName}. Kami mengundangmu untuk merayakan hari bahagia ini bersama kami.`,
   keywords: ['Wedding Invitation', 'Matcha', 'Strawberry', 'Undangan Pernikahan', 'Nadia & Raka'],
   authors: [{ name: 'Nadia & Raka' }],
   icons: {
