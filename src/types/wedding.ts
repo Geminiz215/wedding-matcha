@@ -80,6 +80,34 @@ export interface WishItem {
   color: 'pink' | 'green' | 'cream';
 }
 
+export interface BankAccount {
+  id: string;
+  bankName: string;
+  accountNumber: string;
+  accountHolder: string;
+  recipient: 'groom' | 'bride';
+  recipientNickname: string;
+  theme: 'matcha' | 'strawberry';
+  cardGradient: string;
+  chipColor: string;
+}
+
+export interface WeddingGiftConfig {
+  bankAccounts: BankAccount[];
+  qris?: {
+    title: string;
+    description: string;
+    imageUrl?: string;
+  };
+  giftAddress?: {
+    recipientName: string;
+    phone: string;
+    address: string;
+    city: string;
+    note: string;
+  };
+}
+
 export interface WeddingConfig {
   couple: CoupleConfig;
   weddingDateISO: string;
@@ -91,6 +119,7 @@ export interface WeddingConfig {
   storyTimeline: TimelineStoryItem[];
   gallery: GalleryItem[];
   initialWishes: WishItem[];
+  gifts?: WeddingGiftConfig;
 }
 
 export interface GuestData {

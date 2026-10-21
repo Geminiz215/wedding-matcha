@@ -18,6 +18,7 @@ import {
   Scene08WeddingDay,
   Scene09PersonalNote,
   Scene10Rsvp,
+  SceneWeddingGift,
   Scene11Guestbook,
   Scene12Footer
 } from '@/components/scenes';
@@ -351,6 +352,12 @@ export default function WeddingInvitationPage() {
           rsvpStatus={rsvpStatus}
           setRsvpStatus={setRsvpStatus}
           rsvpErrorMsg={rsvpErrorMsg}
+          lang={lang}
+        />
+
+        {/* Scene: Wedding Gift & Bank Transfer Cards */}
+        <SceneWeddingGift
+          reducedMotion={reducedMotion}
           lang={lang}
         />
 

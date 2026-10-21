@@ -8,5 +8,6 @@ export { Scene07SaveTheDate } from './Scene07SaveTheDate';
 export { Scene08WeddingDay } from './Scene08WeddingDay';
 export { Scene09PersonalNote } from './Scene09PersonalNote';
 export { Scene10Rsvp } from './Scene10Rsvp';
+export { SceneWeddingGift } from './SceneWeddingGift';
 export { Scene11Guestbook } from './Scene11Guestbook';
 export { Scene12Footer } from './Scene12Footer';

@@ -244,5 +244,55 @@ export const WEDDING_CONFIG: WeddingConfig = {
       timestamp: '2 hari yang lalu',
       color: 'green'
     }
-  ]
+  ],
+  gifts: {
+    bankAccounts: [
+      {
+        id: 'bank-bca-raka',
+        bankName: 'BCA',
+        accountNumber: '8271902344',
+        accountHolder: 'RAKA PRADIPTA MAHENDRA',
+        recipient: 'groom',
+        recipientNickname: 'Raka',
+        theme: 'matcha',
+        cardGradient: 'linear-gradient(135deg, #2A3B23 0%, #47603B 50%, #688555 100%)',
+        chipColor: '#E6C663'
+      },
+      {
+        id: 'bank-bca-nadia',
+        bankName: 'BCA',
+        accountNumber: '5270194822',
+        accountHolder: 'NADIA LARASATI PUTRI',
+        recipient: 'bride',
+        recipientNickname: 'Nadia',
+        theme: 'strawberry',
+        cardGradient: 'linear-gradient(135deg, #851E2B 0%, #BA3849 50%, #E26877 100%)',
+        chipColor: '#F7D97B'
+      },
+      {
+        id: 'bank-mandiri-raka',
+        bankName: 'Bank Mandiri',
+        accountNumber: '1370019283741',
+        accountHolder: 'RAKA PRADIPTA MAHENDRA',
+        recipient: 'groom',
+        recipientNickname: 'Raka',
+        theme: 'matcha',
+        cardGradient: 'linear-gradient(135deg, #1C3322 0%, #304D36 60%, #4E7456 100%)',
+        chipColor: '#E6C663'
+      }
+    ],
+    qris: {
+      title: 'QRIS Pembayaran Digital',
+      description: 'Dapat di-scan dengan aplikasi mobile banking apa pun (BCA, Livin, GoPay, OVO, Dana)',
+      imageUrl: ''
+    },
+    giftAddress: {
+      recipientName: 'Nadia Larasati & Raka Pradipta',
+      phone: '+62 812-3456-7890',
+      address: 'Jl. Melati Botanical No. 18, Kebayoran Baru',
+      city: 'Jakarta Selatan, DKI Jakarta 12160',
+      note: 'Mohon sertakan nama pengirim pada label paket agar kami dapat menyampaikan ucapan terima kasih.'
+    }
+  }
 };
+
